@@ -1,0 +1,20 @@
+@import '../../colors.scss';
+
+header{
+    display: flex;
+    justify-content: space-around;
+    padding: 0 0.8em;
+    background-color: $dark;
+    color: $light;
+    span{
+        padding: 0.8em;
+        border-radius: 0.2em;
+        cursor: pointer;
+        background-color: $base;
+        transition: all 0.5s;
+    }
+    span:hover{
+        background-color: $darker;
+        color: $light;
+    }
+}
