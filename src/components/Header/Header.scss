@@ -6,14 +6,16 @@ header{
     padding: 0 0.8em;
     background-color: $dark;
     color: $light;
-    span{
+    a{
+        all: unset;
+
         padding: 0.8em;
-        border-radius: 0.2em;
+        border-radius: 0.4em;
         cursor: pointer;
         background-color: $base;
         transition: all 0.5s;
     }
-    span:hover{
+    a:hover{
         background-color: $darker;
         color: $light;
     }
