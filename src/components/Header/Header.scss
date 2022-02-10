@@ -5,10 +5,10 @@ header{
     justify-content: space-around;
     padding: 0 0.8em;
     background-color: $dark;
-    color: $light;
+    color: $lighter;
+    
     a{
         all: unset;
-
         padding: 0.8em;
         border-radius: 0.4em;
         cursor: pointer;
