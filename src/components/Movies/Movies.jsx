@@ -11,11 +11,11 @@ const Movies = (props) => {
         axios.get(`https://api.themoviedb.org/3/movie/${movieType}?api_key=b5138e06a3a9125b8c326498bbeae997&language=es-ES`)
         .then(res => setMovies(res.data.results))
         .catch(console.error)
-    },[])
+    },[movieType])
  
     return <div className="movies">
-        Tipo de películas: {movieType}
-        {movies?.map(movie=><Movie movie={movie}/>)}
+        {/* Tipo de películas: {movieType} */}
+        {movies?.map(movie=><Movie key={movie.id} movie={movie}/>)}
     </div>
 }
 

@@ -1,0 +1,8 @@
+@import '../../colors.scss';
+
+.movies{
+    display: grid;
+    grid-template: repeat(5,1fr)/ repeat(4,1fr);
+    background-color: $darker;
+    align-items: center;
+}
