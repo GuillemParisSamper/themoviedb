@@ -11,5 +11,20 @@
     background-color: $base;
     img{
         width: 80%;
+        border-radius: 0.3em;
+        
+        transition: all 0.5s; 
+    }  
+    img:hover {
+        transform: scale(1.1); 
+        cursor: pointer;
+        filter: drop-shadow(0 0 0.75em crimson);
+    }
+    div{
+        position: relative;
+        background-color: black;
+        color: white;
+        border-radius: 100em;
+        padding: 0.3em;
     }
 }
