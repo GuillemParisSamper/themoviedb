@@ -1,5 +1,6 @@
-import axios from 'axios';
 import React, { useEffect, useState } from 'react';
+import axios from 'axios';
+import Movie from '../Movie/Movie.jsx'
 import { useParams } from 'react-router-dom';
 import './Movies.scss';
 
@@ -14,7 +15,7 @@ const Movies = (props) => {
  
     return <div className="movies">
         Tipo de películas: {movieType}
-        {movies?.map(movie=>movie.title)}
+        {movies?.map(movie=><Movie movie={movie}/>)}
     </div>
 }
 
