@@ -1,8 +1,9 @@
 @import '../../colors.scss';
 
 .movies{
-    display: grid;
-    grid-template: repeat(5,1fr)/ repeat(4,1fr);
-    background-color: $darker;
+    display: flex;
+    flex-wrap: wrap;
+    background-color: $white;
     align-items: center;
+    justify-content:space-around;
 }

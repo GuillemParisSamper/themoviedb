@@ -3,28 +3,42 @@
 .movie{
     display:flex;
     flex-direction: column;
+    
     padding: 0.8em;
     margin: 0.8em;
     align-items:center;
     justify-content: space-between;
     border-radius: 0.3em;
-    background-color: $base;
+    background-color: $white;
     img{
-        width: 80%;
-        border-radius: 0.3em;
-        
+        //width: 100%;
+        border-radius: 1.0em;
         transition: all 0.5s; 
     }  
     img:hover {
-        transform: scale(1.1); 
+        transform: scale(1.05); 
         cursor: pointer;
-        filter: drop-shadow(0 0 0.75em crimson);
+        filter: drop-shadow(0 0 0.75em $dark);
+    }
+    h4{
+        padding: 0;
+        margin: 0;
     }
     div{
         position: relative;
+        top: -1em;
+        left: -40%;
         background-color: black;
         color: white;
         border-radius: 100em;
         padding: 0.3em;
+        border-color: $white;
+        border: 1px solid $white;
+    }
+    p{
+        color: $base;
+        font-size: small;
+        padding: 0;
+        margin: 0;
     }
 }
