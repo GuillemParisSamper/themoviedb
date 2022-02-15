@@ -3,42 +3,47 @@
 .movie{
     display:flex;
     flex-direction: column;
-    
     padding: 0.8em;
     margin: 0.8em;
-    align-items:center;
-    justify-content: space-between;
     border-radius: 0.3em;
     background-color: $white;
     img{
-        //width: 100%;
         border-radius: 1.0em;
         transition: all 0.5s; 
     }  
     img:hover {
-        transform: scale(1.05); 
         cursor: pointer;
-        filter: drop-shadow(0 0 0.75em $dark);
+        filter: drop-shadow(0 0 0.5em $dark);
+        transform: scale(1.05); 
     }
     h4{
         padding: 0;
         margin: 0;
+        width: 180px;
     }
     div{
-        position: relative;
-        top: -1em;
-        left: -40%;
-        background-color: black;
-        color: white;
+        position:relative;
+        top:-20px;
+        left:120px;
+        height: 25px;
+        width: 25px;
+        background-color: rgba(0, 0, 0, 0.8) ;
+        color: $white;
         border-radius: 100em;
         padding: 0.3em;
-        border-color: $white;
         border: 1px solid $white;
+        p{
+            color: $white;
+            font-size: medium;
+            opacity: 1;
+            text-align:center;
+        }
     }
     p{
         color: $base;
         font-size: small;
-        padding: 0;
         margin: 0;
+        padding: 0;
+        text-align: left;
     }
 }
