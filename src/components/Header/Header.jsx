@@ -13,9 +13,12 @@ const Header = props =>{
         </NavLink>
 
         <NavLink to="/top_rated">
-            <span className="top-rated">Películas más votadas</span>
+            <span className="top_rated">Películas más votadas</span>
         </NavLink>
-
+        <br />
+        <NavLink to="/search/Jack+Reacher">
+            <span className="search">Buscar</span>
+        </NavLink>
     </header>
 }
 export default Header;

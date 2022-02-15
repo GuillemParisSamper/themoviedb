@@ -2,20 +2,17 @@ import React, { useEffect, useState } from 'react';
 import axios from 'axios';
 import Movie from '../Movie/Movie.jsx'
 import { useParams } from 'react-router-dom';
-import './Movies.scss';
+import './Search.scss';
 
-const Movies = (props) => {
-    let {movieType} = useParams();
+const Search = (props) => {
+    const {search} = useParams();
     const [movies, setMovies] = useState([]);
-    if (movieType === undefined){
-        movieType="popular"
-    } 
-    console.log(movieType + " - result")
+    console.log(search)
     useEffect(()=>{
-        axios.get(`https://api.themoviedb.org/3/movie/${movieType}?api_key=b5138e06a3a9125b8c326498bbeae997&language=es-ES`)
+        axios.get(`https://api.themoviedb.org/3/search/movie?api_key=b5138e06a3a9125b8c326498bbeae997&query=${search}`)
         .then(res => setMovies(res.data.results))
         .catch(console.error)
-    },[movieType])
+    },[search])
  
     return <div className="movies">
         {/* Tipo de películas: {movieType} */}
@@ -23,4 +20,4 @@ const Movies = (props) => {
     </div>
 }
 
-export default Movies;
+export default Search;
